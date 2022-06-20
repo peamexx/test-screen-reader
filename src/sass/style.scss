@@ -1,9 +1,17 @@
 // reset
 
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../fonts/NotoSansKR-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'NotoSansKR';
 }
 
 ul, li {
@@ -16,3 +24,11 @@ table {
 }
 
 // start
+
+table {
+    width: 100%;
+}
+
+.stateIcon img {
+    width: 30px;
+}

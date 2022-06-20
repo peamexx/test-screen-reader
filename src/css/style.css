@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../fonts/NotoSansKR-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "NotoSansKR";
 }
 
 ul, li {
@@ -12,4 +19,12 @@ ul, li {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.stateIcon img {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */

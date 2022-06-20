@@ -9,7 +9,19 @@ $(document).ready(function () {
                 //     return '<p title="">' + data + '</p>'
                 // }
             },
-            {data: 'state'},
+            {
+                data: 'state',
+                className: 'stateIcon',
+                render: function(data) {
+                    if(data == -1) {
+                        return '<img src="/src/images/svg/warning.svg" />'
+                    } else if(data == 0) {
+                        return '<img src="/src/images/svg/not-pass.svg" />'
+                    } else if(data == 1) {
+                        return '<img src="/src/images/svg/pass.svg" />'
+                    }
+                }
+            },
             {data: 'text'},
             {data: 'tag'},
         ],
