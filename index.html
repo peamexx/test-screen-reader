@@ -10,10 +10,22 @@
     <link rel="stylesheet" href="/src/libs/DataTables-1.12.1/datatables.min.css">
 </head>
 <body>
-    <h1>h1</h1>
-    <p>Screen Reader: 센스리더(v7.9)</p>
-    <p>브라우저: 크롬</p>
-    <section>
+    <h1>title</h1>
+    <p>최근 업데이트: 2022-06-20 - a태그 테스트 결과 추가</p>
+    <p>이곳은 대한민국에서 주로 쓰이는 스크린리더인 센스리더를 이용한 태그별 테스트 결과페이지입니다. 센스리더는 외국 스크린리더에 비해 지원가능한 태그가 사뭇 다르기때문에 아래와 같이 정리하였습니다. NVDA, JAWS와 같은 해외 스크린리더 테스트 결과는 <a href="https://www.powermapper.com/tests/screen-readers/elements/" target="_blank">이곳</a>등에서 확인 가능합니다. </p>
+    <hr>
+    <p>문의: </p>
+    <p>개발하면서 정리차 만든 페이지라 간단한 참고용으로 부탁드립니다.</p>
+    <hr>
+    <p>테스트 Screen Reader: 센스리더(v7.9)</p>
+    <p>테스트 브라우저: 크롬(v102.0.5005.115)</p>
+    <hr>
+    <div>
+        <p>태그 리스트(누르면 해당 위치로 이동)</p>
+        <a href="#tag-a">a</a>
+    </div>
+    <p>※ 각 조건을 클릭하면 테스트한 html태그가 alert창에 표시됩니다</p>
+    <section id="tag-a">
         <h2>a</h2>
         <table id="table1">
             <thead>
@@ -26,13 +38,11 @@
             <tbody>
             </tbody>
         </table>
-        <aside>
-            <dl>
-                <dd>버튼으로 쓰고싶다면</dd>
-                <dt>role="button" 추천</dt>
-                <dd>링크 이런거 말고 안에 내용만 읽어줬음 좋겠다면</dd>
-                <dt>href빼고 tabindex추가</dt>
-            </dl>
+        <aside class="tips">
+            <ul>
+                <li>버튼으로 쓰고싶다면 role="button"</li>
+                <li>링크 이런거 말고 안에 내용만 읽어줬음 좋겠다면 href빼고 tabindex추가</li>
+            </ul>
         </aside>
     </section>
 
