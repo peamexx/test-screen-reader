@@ -13,13 +13,16 @@ $(document).ready(function () {
                 data: 'state',
                 className: 'stateIcon',
                 render: function(data) {
+                    var r;
                     if(data == -1) {
-                        return '<img src="/src/images/svg/warning.svg" />'
+                        r = '<img src="/src/images/svg/warning.svg" />'
                     } else if(data == 0) {
-                        return '<img src="/src/images/svg/not-pass.svg" />'
+                        r = '<img src="/src/images/svg/not-pass.svg" />'
                     } else if(data == 1) {
-                        return '<img src="/src/images/svg/pass.svg" />'
+                        r = '<img src="/src/images/svg/pass.svg" />'
                     }
+                    r += '<span class="hide">' + data + '</span>';
+                    return r;
                 }
             },
             {data: 'text'},
@@ -27,14 +30,27 @@ $(document).ready(function () {
         ],
         columnDefs: [
             {
+                target: [0, 1],
+                orderable: true
+            },
+            {
                 target: 3,
                 visible: false,
             },
+            {
+                targets: '_all',
+                orderable: false
+            }
         ],
+        dom: 'itr'
     });
 });
 
 $('table').on('click', '.openModal', function() {
     const t = $(this).parents('table').DataTable();
-    alert(t.row(this).data().tag)
+    try {
+        alert(t.row(this).data().tag)
+    } catch {
+        console.warn('data:' + t.row(this).data())
+    }
 });

@@ -21,6 +21,10 @@ table {
   border-spacing: 0;
 }
 
+.hide {
+  display: none;
+}
+
 table {
   width: 100%;
 }

@@ -11,27 +11,29 @@
 </head>
 <body>
     <h1>h1</h1>
+    <p>Screen Reader: 센스리더(v7.9)</p>
+    <p>브라우저: 크롬</p>
     <section>
-        <h2>tag</h2>
-        <!-- <a href="#" aria-labelledby="here">apple</a>
-        <span id="here">banana</span> -->
+        <h2>a</h2>
         <table id="table1">
             <thead>
                 <tr>
-                    <th colspan="4">Screen Reader: Sense reader</th>
-                </tr>
-                <tr>
-                    <th colspan="4">Browser: Chrome</th>
-                </tr>
-                <tr>
-                    <th>Case</th>
-                    <th>State</th>
-                    <th>Text</th>
+                    <th>조건</th>
+                    <th>상태</th>
+                    <th>읽어주는 내용</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
+        <aside>
+            <dl>
+                <dd>버튼으로 쓰고싶다면</dd>
+                <dt>role="button" 추천</dt>
+                <dd>링크 이런거 말고 안에 내용만 읽어줬음 좋겠다면</dd>
+                <dt>href빼고 tabindex추가</dt>
+            </dl>
+        </aside>
     </section>
 
     <script src="/src/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
