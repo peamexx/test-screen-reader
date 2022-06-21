@@ -67,11 +67,12 @@ hr {
     border-top: 1px dashed #D8BFD8;
 }
 
-.tag-list a {
+#tag-list a,
+.goto-list {
     display: inline-block;
     min-width: 50px;
     margin-top: 10px;
-    padding: 3px 5px;
+    padding: 3px 10px;
     border-radius: 10px;
     background-color: #554149;
     color: #FFE4F7;
