@@ -28,31 +28,31 @@
             "case": "태그 안에 img(+alt)",
             "state": 1,
             "text": "알트/버튼",
-            "tag": "<button><img src='/src/images/sample.jpg' alt='알트'></button>"
+            "tag": "<button><img src='./src/images/sample.jpg' alt='알트'></button>"
         },
         {
             "case": "태그 안에 img(+aria-label)",
             "state": 1,
             "text": "라벨/버튼",
-            "tag": "<button><img src='/src/images/sample.jpg' aria-label='라벨'></button>"
+            "tag": "<button><img src='./src/images/sample.jpg' aria-label='라벨'></button>"
         },
         {
             "case": "태그 안에 img(+title)",
             "state": 1,
             "text": "타이틀/버튼",
-            "tag": "<button><img src='/src/images/sample.jpg' title='타이틀'></button>"
+            "tag": "<button><img src='./src/images/sample.jpg' title='타이틀'></button>"
         },
         {
             "case": "태그 안에 img(+aria-labelledby)",
             "state": 1,
             "text": "레이블/버튼",
-            "tag": "<button><img src='/src/images/sample.jpg' aria-labelledby='connect'></button><span id='connect'>레이블</span>"
+            "tag": "<button><img src='./src/images/sample.jpg' aria-labelledby='connect'></button><span id='connect'>레이블</span>"
         },
         {
             "case": "aria-label, 태그 안에 img",
             "state": 1,
             "text": "라벨/버튼",
-            "tag": "<button aria-label='라벨'><img src='/src/images/sample.jpg'></button>"
+            "tag": "<button aria-label='라벨'><img src='./src/images/sample.jpg'></button>"
         }
     ]
 }

@@ -10,11 +10,11 @@ $(document).ready(function () {
             render: function(data) {
                 var r;
                 if(data == -1) {
-                    r = '<img src="/src/images/svg/warning.svg" />'
+                    r = '<img src="./src/imagees/svg/warning.svg" />'
                 } else if(data == 0) {
-                    r = '<img src="/src/images/svg/not-pass.svg" />'
+                    r = '<img src="./src/imagees/svg/not-pass.svg" />'
                 } else if(data == 1) {
-                    r = '<img src="/src/images/svg/pass.svg" />'
+                    r = '<img src="./src/imagees/svg/pass.svg" />'
                 }
                 r += '<span class="hide">' + data + '</span>';
                 return r;

@@ -52,19 +52,19 @@
             "case": "태그 안에 img(+alt)",
             "state": -1,
             "text": "알트/방문하는 그래픽 링크",
-            "tag": "<a href='#'><img src='/src/images/sample.jpg' alt='알트'></a>"
+            "tag": "<a href='#'><img src='./src/images/sample.jpg' alt='알트'></a>"
         },
         {
             "case": "태그 안에 img(+title)",
             "state": 1,
             "text": "타이틀/방문하는 그래픽 링크",
-            "tag": "<a href='#'><img src='/src/images/sample.jpg' title='타이틀'></a>"
+            "tag": "<a href='#'><img src='./src/images/sample.jpg' title='타이틀'></a>"
         },
         {
             "case": "aria-label, 태그 안에 img",
             "state": 1,
             "text": "라벨/방문하는 그래픽 링크",
-            "tag": "<a href='#' aria-label='라벨'><img src='/src/images/sample.jpg'></a>"
+            "tag": "<a href='#' aria-label='라벨'><img src='./src/images/sample.jpg'></a>"
         }
     ]
 }
