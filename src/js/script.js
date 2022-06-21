@@ -42,14 +42,14 @@ $(document).ready(function () {
     const dom = 'tr';
 
     $('#table-a').DataTable({
-        ajax: '/data/data-a.json',
+        ajax: './data/data-a.json',
         columns: columns,
         columnDefs: columnDefs,
         dom: dom,
     });
 
     $('#table-button').DataTable({
-        ajax: '/data/data-button.json',
+        ajax: './data/data-button.json',
         columns: columns,
         columnDefs: columnDefs,
         dom: dom,
