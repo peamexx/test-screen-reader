@@ -1,48 +1,58 @@
 $(document).ready(function () {
-    $('#table1').DataTable({
-        ajax: '/data/dataSet.json',
-        columns: [
-            {
-                data: 'case',
-                className: 'openModal'
-                // render: function(data, type) {
-                //     return '<p title="">' + data + '</p>'
-                // }
-            },
-            {
-                data: 'state',
-                className: 'stateIcon',
-                render: function(data) {
-                    var r;
-                    if(data == -1) {
-                        r = '<img src="/src/images/svg/warning.svg" />'
-                    } else if(data == 0) {
-                        r = '<img src="/src/images/svg/not-pass.svg" />'
-                    } else if(data == 1) {
-                        r = '<img src="/src/images/svg/pass.svg" />'
-                    }
-                    r += '<span class="hide">' + data + '</span>';
-                    return r;
+    const columns = [
+        {
+            data: 'case',
+            className: 'openModal'
+        },
+        {
+            data: 'state',
+            className: 'stateIcon',
+            render: function(data) {
+                var r;
+                if(data == -1) {
+                    r = '<img src="/src/images/svg/warning.svg" />'
+                } else if(data == 0) {
+                    r = '<img src="/src/images/svg/not-pass.svg" />'
+                } else if(data == 1) {
+                    r = '<img src="/src/images/svg/pass.svg" />'
                 }
-            },
-            {data: 'text'},
-            {data: 'tag'},
-        ],
-        columnDefs: [
-            {
-                target: [0, 1],
-                orderable: true
-            },
-            {
-                target: 3,
-                visible: false,
-            },
-            {
-                targets: '_all',
-                orderable: false
+                r += '<span class="hide">' + data + '</span>';
+                return r;
             }
-        ],
-        dom: 'itr'
+        },
+        {data: 'text'},
+        {data: 'tag'},
+    ];
+
+    const columnDefs = [
+        {
+            target: [0, 1],
+            orderable: true
+        },
+        // {
+        //     target: 3,
+        //     visible: false,
+        // },
+        {
+            targets: '_all',
+            orderable: false
+        }
+    ];
+
+    const dom = 'tr';
+
+    $('#table-a').DataTable({
+        ajax: '/data/data-a.json',
+        columns: columns,
+        columnDefs: columnDefs,
+        dom: dom,
+    });
+
+    $('#table-button').DataTable({
+        ajax: '/data/data-button.json',
+        columns: columns,
+        columnDefs: columnDefs,
+        dom: dom,
     });
 });
 
