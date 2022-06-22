@@ -24,6 +24,12 @@ $(document).ready(function () {
         {data: 'tag'},
     ];
 
+    const columnsCIU = [
+        {data: 'order'},
+        {data: 'title'},
+        {data: 'role'},
+    ];
+
     const columnDefs = [
         {
             target: [0, 1],
@@ -33,6 +39,17 @@ $(document).ready(function () {
         //     target: 3,
         //     visible: false,
         // },
+        {
+            targets: '_all',
+            orderable: false
+        }
+    ];
+
+    const columnDefsCIU = [
+        {
+            target: 0,
+            visible: false
+        },
         {
             targets: '_all',
             orderable: false
@@ -59,6 +76,13 @@ $(document).ready(function () {
         ajax: './data/data-img.json',
         columns: columns,
         columnDefs: columnDefs,
+        dom: dom,
+    });
+
+    $('#table-a-ciu').DataTable({
+        ajax: './data/data-a-ciu.json',
+        columns: columnsCIU,
+        columnDefs: columnDefsCIU,
         dom: dom,
     });
 });

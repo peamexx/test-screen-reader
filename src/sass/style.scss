@@ -70,7 +70,8 @@ body {
     font-size: 14px;
 }
 
-.title-des {
+.title-dec {
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -109,4 +110,22 @@ table tbody td:first-child {
 
 .stateIcon img {
     width: 30px;
+}
+
+#can-i-use {
+    background-color: #DAF3FF;
+}
+
+#can-i-use .update {
+    background-color: #94ADCF;
+}
+
+#can-i-use #tag-list a,
+#can-i-use .goto-list {
+    background-color: #8FC2D8;
+    color: #DAF3FF;
+}
+
+#can-i-use hr {
+    border-top: 1px dotted #94ADCF;
 }

@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "order": 1,
+            "title": "기본",
+            "role": "link (href없으면 기본 role은 없음)"
+        },
+        {
+            "order": 2,
+            "title": "가능 role",
+            "role": "button, checkbox, menuitem, menuitemcheckbox, menuitemradio, option, radio, switch, tab or treeitem (href없으면 모든 role가능)"
+        },
+        {
+            "order": 3,
+            "title": "가능 aria",
+            "role": "모든 aria 사용가능 (href 상관없음)"
+        },
+        {
+            "order": 4,
+            "title": "비고",
+            "role": "aria-disabled 사용 비추천 (href있을때만)"
+        }
+    ]
+}
