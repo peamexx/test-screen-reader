@@ -96,6 +96,10 @@ table tbody td:first-child {
   cursor: pointer;
 }
 
+.deck {
+  margin: 10px 0 15px;
+}
+
 .stateIcon img {
   width: 30px;
 }/*# sourceMappingURL=style.css.map */

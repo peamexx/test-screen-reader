@@ -54,6 +54,13 @@ $(document).ready(function () {
         columnDefs: columnDefs,
         dom: dom,
     });
+
+    $('#table-img').DataTable({
+        ajax: './data/data-img.json',
+        columns: columns,
+        columnDefs: columnDefs,
+        dom: dom,
+    });
 });
 
 $('table').on('click', '.openModal', function() {

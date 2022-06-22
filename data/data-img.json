@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "case": "alt",
+            "state": 1,
+            "text": "알트/이미지",
+            "tag": "<img src='./src/images/sample.jpg' alt='알트' tabindex='0'>"
+        },
+        {
+            "case": "title",
+            "state": 1,
+            "text": "타이틀/이미지",
+            "tag": "<img src='./src/images/sample.jpg' title='타이틀' tabindex='0'>"
+        },
+        {
+            "case": "aria-label",
+            "state": 1,
+            "text": "라벨/이미지",
+            "tag": "<img src='./src/images/sample.jpg' aria-label='라벨' tabindex='0'>"
+        },
+        {
+            "case": "aria-labelledby",
+            "state": 1,
+            "text": "레이블/이미지",
+            "tag": "<img src='./src/images/sample.jpg' aria-labelledby='connect' tabindex='0'><span id='connect'>레이블</span>"
+        },
+        {
+            "case": "alt, role='button'",
+            "state": 1,
+            "text": "알트/버튼",
+            "tag": "<img src='./src/images/sample.jpg' role='button' alt='알트' tabindex='0'>"
+        },
+        {
+            "case": "alt, role='checkbox'",
+            "state": 1,
+            "text": "해제/알트/체크상자",
+            "tag": "<img src='./src/images/sample.jpg' role='checkbox' alt='알트' tabindex='0'>"
+        },
+        {
+            "case": "alt, role='link'",
+            "state": 1,
+            "text": "알트/링크",
+            "tag": "<img src='./src/images/sample.jpg' role='link' alt='알트' tabindex='0'>"
+        }
+    ]
+}
