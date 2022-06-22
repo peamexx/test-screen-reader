@@ -85,6 +85,51 @@ $(document).ready(function () {
         columnDefs: columnDefsCIU,
         dom: dom,
     });
+
+    $('#table-keyboard').DataTable({
+        ajax: './data/data-keyboard.json',
+        columns: [
+            {data: 'order'},
+            {
+                data: 'title',
+                render: function(data) {
+                    var r;
+                    r = data.replaceAll('(', '<br>(');
+                    return r;
+                }
+            },
+            {
+                data: 'key',
+                render: function(data) {
+                    var r;
+                    var reg = /Enter|Tab|Shift\+Tab|Spacebar|←↑→↓|↑↓|Esc|←→|Home|End/gi;
+                    r = data.replace(reg, '<span class="KEY">'+'$&'+'</span>');
+                    return r;
+                }
+            },
+            {
+                data: 'note',
+                render: function(data) {
+                    var r;
+                    var arr = data.split('. ');
+
+                    if(arr[0].length == 0) {
+                        return '-';
+                    } else {
+                        r = '<ul>';
+                        arr.forEach(function(a) {
+                            a = a.replace('비모달유형','<a href="https://accessuse.eu/en/non-modal-dialogs.html" target="_blank" title="비모달유형 예시 페이지">비모달유형</a>');
+                            r += `<li>${a}</li>`;
+                        });
+                        r += '</ul>';
+                    }
+                    return r;
+                }
+            }
+        ],
+        columnDefs: columnDefsCIU,
+        dom: dom,
+    });
 });
 
 $('table').on('click', '.openModal', function() {

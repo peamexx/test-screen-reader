@@ -128,6 +128,10 @@ table tbody td:first-child {
     cursor: pointer;
 }
 
+table tbody td {
+    line-height: 2;
+}
+
 .deck {
     margin: 10px 0 15px;
 }
@@ -152,4 +156,30 @@ table tbody td:first-child {
 
 #can-i-use hr {
     border-top: 1px dotted #94ADCF;
+}
+
+#keyboard-accessibility {
+    background-color: #EFFDED;
+}
+
+#keyboard-accessibility .update {
+    background-color: #A8C6A3;
+}
+
+#keyboard-accessibility hr {
+    border-top: 1px dotted #A2AF9F;
+}
+
+#keyboard-accessibility table li {
+    list-style-type: disc;
+}
+
+#keyboard-accessibility .KEY {
+    margin-right: 2px;
+    padding: 2px 5px;
+    border-radius: 7px;
+    border: 2px solid #A2AF9F;
+    background-color: #F8FFF8;
+    color: #566254;
+    font-weight: bold;
 }
