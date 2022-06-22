@@ -58,6 +58,8 @@ $(document).ready(function () {
 
     const dom = 'tr';
 
+    _getHeader();
+
     $('#table-a').DataTable({
         ajax: './data/data-a.json',
         columns: columns,
@@ -130,6 +132,13 @@ $(document).ready(function () {
         columnDefs: columnDefsCIU,
         dom: dom,
     });
+
+    function _getHeader() {
+        const header = document.querySelector('header');
+        fetch('./src/component/header.html')
+        .then(res => res.text())
+        .then(data => header.innerHTML = data);
+    }
 });
 
 $('table').on('click', '.openModal', function() {
