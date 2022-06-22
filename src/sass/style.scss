@@ -56,7 +56,8 @@ p {
 // start
 
 body {
-    margin-top: 50px;
+    width: 60%;
+    margin: 50px auto;
     padding: 30px;
     background-color: #FFF6FB;
     color: #212023;
@@ -75,8 +76,9 @@ header ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 60%;
     height: 100%;
+    margin: auto;
 }
 
 header ul a {
