@@ -137,7 +137,30 @@ $(document).ready(function () {
         const header = document.querySelector('header');
         fetch('./src/component/header.html')
         .then(res => res.text())
-        .then(data => header.innerHTML = data);
+        .then(function(data) {
+            header.innerHTML = data;
+
+            _setActiveHeader();
+        })
+    }
+
+    function _setActiveHeader() {
+        let path = window.location.pathname;
+        path = path.slice(1, path.length - 5);
+        
+        $('header li').removeClass('active');
+
+        switch (path) {
+            case 'can-i-use':
+                $('header li:nth-child(2)').addClass('active');
+                break;
+            case 'keyboard-accessibility':
+                $('header li:last-child').addClass('active');
+                break;
+            default:
+                $('header li:first-child').addClass('active');
+                break;
+        }
     }
 });
 
