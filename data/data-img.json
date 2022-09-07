@@ -1,46 +1,46 @@
 {
     "data": [
         {
-            "case": "alt",
-            "state": 1,
-            "text": "알트/이미지",
-            "tag": "<img src='./src/images/sample.jpg' alt='알트' tabindex='0'>"
+            "case": "img에 alt",
+            "tag": "<img src='./src/images/sample.jpg' alt='알트' tabindex='0'>",
+            "text": "알트 이미지",
+            "etc": ""
         },
         {
-            "case": "title",
-            "state": 1,
-            "text": "타이틀/이미지",
-            "tag": "<img src='./src/images/sample.jpg' title='타이틀' tabindex='0'>"
+            "case": "img에 title",
+            "tag": "<img src='./src/images/sample.jpg' title='타이틀' tabindex='0'>",
+            "text": "타이틀 이미지",
+            "etc": ""
         },
         {
-            "case": "aria-label",
-            "state": 1,
-            "text": "라벨/이미지",
-            "tag": "<img src='./src/images/sample.jpg' aria-label='라벨' tabindex='0'>"
+            "case": "img에 aria-label",
+            "tag": "<img src='./src/images/sample.jpg' aria-label='레이블' tabindex='0'>",
+            "text": "레이블 이미지",
+            "etc": ""
         },
         {
-            "case": "aria-labelledby",
-            "state": 1,
-            "text": "레이블/이미지",
-            "tag": "<img src='./src/images/sample.jpg' aria-labelledby='connect' tabindex='0'><span id='connect'>레이블</span>"
+            "case": "img에 aria-labelledby",
+            "tag": "<img src='./src/images/sample.jpg' aria-labelledby='connect' tabindex='0'><span id='connect'>레이블</span>",
+            "text": "레이블 이미지",
+            "etc": ""
         },
         {
-            "case": "alt, role='button'",
-            "state": 1,
-            "text": "알트/버튼",
-            "tag": "<img src='./src/images/sample.jpg' role='button' alt='알트' tabindex='0'>"
+            "case": "img에 alt, role='button'",
+            "tag": "<img src='./src/images/sample.jpg' role='button' alt='알트' tabindex='0'>",
+            "text": "알트 버튼",
+            "etc": ""
         },
         {
-            "case": "alt, role='checkbox'",
-            "state": 1,
-            "text": "해제/알트/체크상자",
-            "tag": "<img src='./src/images/sample.jpg' role='checkbox' alt='알트' tabindex='0'>"
+            "case": "img에 alt, role='checkbox'",
+            "tag": "<img src='./src/images/sample.jpg' role='checkbox' alt='알트' tabindex='0'>",
+            "text": "해제 알트 체크상자",
+            "etc": ""
         },
         {
-            "case": "alt, role='link'",
-            "state": 1,
-            "text": "알트/링크",
-            "tag": "<img src='./src/images/sample.jpg' role='link' alt='알트' tabindex='0'>"
+            "case": "img에 alt, role='link'",
+            "tag": "<img src='./src/images/sample.jpg' role='link' alt='알트' tabindex='0'>",
+            "text": "알트 링크",
+            "etc": ""
         }
     ]
 }

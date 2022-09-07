@@ -5,23 +5,23 @@ $(document).ready(function () {
             className: 'openModal'
         },
         {
-            data: 'state',
-            className: 'stateIcon',
-            render: function(data) {
-                var r;
-                if(data == -1) {
-                    r = '<img src="./src/images/svg/warning.svg" />'
-                } else if(data == 0) {
-                    r = '<img src="./src/images/svg/not-pass.svg" />'
-                } else if(data == 1) {
-                    r = '<img src="./src/images/svg/pass.svg" />'
-                }
-                r += '<span class="hide">' + data + '</span>';
-                return r;
-            }
+            data: 'tag',
+            // className: 'stateIcon',
+            // render: function(data) {
+            //     var r;
+            //     if(data == -1) {
+            //         r = '<img src="./src/images/svg/warning.svg" />'
+            //     } else if(data == 0) {
+            //         r = '<img src="./src/images/svg/not-pass.svg" />'
+            //     } else if(data == 1) {
+            //         r = '<img src="./src/images/svg/pass.svg" />'
+            //     }
+            //     r += '<span class="hide">' + data + '</span>';
+            //     return r;
+            // }
         },
         {data: 'text'},
-        {data: 'tag'},
+        {data: 'etc'},
     ];
 
     const columnsCIU = [

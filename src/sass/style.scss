@@ -59,8 +59,8 @@ body {
     width: 60%;
     margin: 50px auto;
     padding: 30px;
-    background-color: #FFF6FB;
-    color: #212023;
+    background-color: #F5F5F6;
+    color: #333;
 }
 
 header {
@@ -90,7 +90,8 @@ header ul a {
     margin-bottom: 10px;
     padding: 0 10px;
     border-radius: 10px;
-    background-color: #BCA5AE;
+    background-color: #25408e;
+    color: #8d98f2;
     font-size: 14px;
 }
 
@@ -111,13 +112,19 @@ hr {
     margin-top: 10px;
     padding: 3px 10px;
     border-radius: 10px;
-    background-color: #554149;
-    color: #FFE4F7;
+    background-color: #5b6abf;
+    color: #fff;
     text-align: center;
 }
 
 section {
     margin: 50px 0;
+    h2 {
+        padding: 0.5em 0;
+        background-color: #25408e;
+        text-align: center;
+        color: #8d98f2;
+    }
 }
 
 table {

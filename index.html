@@ -12,62 +12,55 @@
 <body>
     <header></header>
     <h1>Testing for Accessibility with the Sense reader</h1>
-    <p class="update">최근 업데이트: 2022-06-22 - img태그 테스트 결과 추가</p>
-    <p class="title-dec">이곳은 <span class="bold">대한민국에서 주로 쓰이는 스크린리더인 <em>센스리더</em>를 이용한 태그별 읽기방법 정리페이지</span>입니다. 센스리더는 외국 스크린리더에 비해 지원가능한 태그가 사뭇 다르기때문에 아래와 같이 정리하였습니다. NVDA, JAWS와 같은 해외 스크린리더 테스트 결과는 <a href="https://www.powermapper.com/tests/screen-readers/elements/" target="_blank">이곳</a>등에서 확인 가능합니다. </p>
-    <hr>
-    <p>오류신고: <a href="https://twitter.com/peamexx" target="_blank">@peamexx</a></p>
-    <p>개발하면서 정리차 만든 페이지라 간단한 참고용으로 부탁드립니다.</p>
-    <hr>
-    <p>테스트 스크린리더: 센스리더(v7.9) <a href="http://xvtech.com/services" target="_blank">(다운로드)</a></p>
-    <p>테스트 브라우저: 크롬(v102.0.5005.115)</p>
-    <hr>
-    <div id="tag-list">
-        <h3>태그 리스트(누르면 해당 위치로 이동)</h3>
-        <a href="#tag-a">a</a>
-        <a href="#tag-button">button</a>
-        <a href="#tag-img">img</a>
+    <div>
+        <p class="update">최근 업데이트: 2022-09-07 가독성있게 내용/표 수정, 표에서 읽어주는내용 업데이트</p>
+        <p class="title-dec">이곳은 <b>태그별 WAI-ARIA, role</b>을 대한민국 스크린리더인 <u><b>센스리더</b>가 어떻게 읽는지</u> 정리한 페이지입니다. NVDA, JAWS와 같은 해외 스크린리더 테스트 결과는 <a href="https://www.powermapper.com/tests/screen-readers/elements/" target="_blank">이곳</a>등에서 확인 가능합니다. </p>
+        <hr>
+        <p><b>※센스리더 버전, 브라우저 종류에 따라 <u>읽는 내용이 다릅니다</u></b></p>
+        <hr>
+        <p>오류신고: <a href="https://twitter.com/peamexx" target="_blank">@peamexx</a></p>
+        <p>개발하면서 정리차 만든 페이지라 간단한 참고용으로 부탁드립니다.</p>
+        <hr>
+        <p>테스트 스크린리더: 센스리더(7.9.0.0, 2022.8월 업데이트 버전) <a href="http://xvtech.com/services" target="_blank">(다운로드)</a></p>
+        <p>테스트 브라우저: 크롬(v102.0.5005.115)</p>
+        <hr>
+        <div id="tag-list">
+            <h2>태그 리스트 (누르면 해당 위치로 이동)</h2>
+            <a href="#tag-a">a</a>
+            <a href="#tag-button">button</a>
+            <a href="#tag-img">img</a>
+        </div>
+        <hr>
     </div>
-    <hr>
     <section id="tag-a">
-        <h2>a</h2>
+        <h2 tabindex="0">a</h2>
         <table id="table-a">
             <thead>
                 <tr>
-                    <th>조건 (각각 누르면 html태그 알려줌)</th>
-                    <th>상태</th>
+                    <th>사용 태그 (각각 클릭하면 html 알려줌)</th>
+                    <th>html 결과</th>
                     <th>읽어주는 내용</th>
-                    <th>태그</th>
+                    <th>비고</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
-        <aside class="tips">
-            <dl>
-                <dt>버튼으로 쓰고싶다면</dt>
-                <dd>role='button' 추가</dd>
-                <dt>단순히 안에 텍스트만 읽어줬으면 좋겠다면</dt>
-                <dd>href 아예 빼고 tabindex='0' 추가</dd>
-            </dl>
-        </aside>
-        <a href="#tag-list" class="goto-list">&#x25B2; 리스트로 올라가기</a>
     </section>
     <section id="tag-button">
-        <h2>button</h2>
+        <h2 tabindex="0">button</h2>
         <table id="table-button">
             <thead>
                 <tr>
-                    <th>조건 (각각 누르면 html태그 알려줌)</th>
-                    <th>상태</th>
+                    <th>사용 태그 (각각 클릭하면 html 알려줌)</th>
+                    <th>html 결과</th>
                     <th>읽어주는 내용</th>
-                    <th>태그</th>
+                    <th>비고</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
-        <aside class="tips"></aside>
-        <a href="#tag-list" class="goto-list">&#x25B2; 리스트로 올라가기</a>
     </section>
     <section id="tag-img">
         <h2>img</h2>
@@ -75,16 +68,15 @@
         <table id="table-img">
             <thead>
                 <tr>
-                    <th>조건 (각각 누르면 html태그 알려줌)</th>
-                    <th>상태</th>
+                    <th>사용 태그 (각각 클릭하면 html 알려줌)</th>
+                    <th>html 결과</th>
                     <th>읽어주는 내용</th>
-                    <th>태그</th>
+                    <th>비고</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
-        <aside class="tips"></aside>
         <a href="#tag-list" class="goto-list">&#x25B2; 리스트로 올라가기</a>
     </section>
 

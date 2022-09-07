@@ -1,58 +1,58 @@
 {
     "data": [
         {
-            "case": "aria-label",
-            "state": 1,
-            "text": "라벨/버튼",
-            "tag": "<button aria-label='라벨'>텍스트</button>"
+            "case": "button태그에 aria-label",
+            "tag": "<button aria-label='레이블'>텍스트</button>",
+            "text": "레이블 버튼",
+            "etc": ""
         },
         {
-            "case": "aria-labelledby",
-            "state": 1,
-            "text": "레이블/버튼",
-            "tag": "<button aria-labelledby='connect'>텍스트</button><span id='connect'>레이블</span>"
+            "case": "button태그에 aria-labelledby",
+            "tag": "<button aria-labelledby='connect'>텍스트</button><span id='connect'>레이블</span>",
+            "text": "레이블 버튼",
+            "etc": ""
         },
         {
-            "case": "aria-describedby",
-            "state": 0,
-            "text": "텍스트/버튼",
-            "tag": "<button aria-describedby='connect'>텍스트</button><span id='connect'>레이블</span>"
+            "case": "button태그에 aria-describedby",
+            "tag": "<button aria-describedby='connect'>텍스트</button><span id='connect'>레이블</span>",
+            "text": "텍스트 버튼",
+            "etc": "aria-describedby 안읽음"
         },
         {
-            "case": "title",
-            "state": 0,
-            "text": "텍스트/버튼",
-            "tag": "<button title='타이틀'>텍스트</button>"
+            "case": "button태그에 title",
+            "tag": "<button title='타이틀'>텍스트</button>",
+            "text": "텍스트 버튼",
+            "etc": "title 안읽음"
         },
         {
-            "case": "태그 안에 img(+alt)",
-            "state": 1,
-            "text": "알트/버튼",
-            "tag": "<button><img src='./src/images/sample.jpg' alt='알트'></button>"
+            "case": "button태그에 img(+alt)",
+            "tag": "<button><img src='./src/images/sample.jpg' alt='알트'></button>",
+            "text": "알트 버튼",
+            "etc": ""
         },
         {
-            "case": "태그 안에 img(+aria-label)",
-            "state": 1,
-            "text": "라벨/버튼",
-            "tag": "<button><img src='./src/images/sample.jpg' aria-label='라벨'></button>"
+            "case": "button태그에 img(+aria-label)",
+            "tag": "<button><img src='./src/images/sample.jpg' aria-label='레이블'></button>",
+            "text": "레이블 버튼",
+            "etc": ""
         },
         {
-            "case": "태그 안에 img(+title)",
-            "state": 1,
-            "text": "타이틀/버튼",
-            "tag": "<button><img src='./src/images/sample.jpg' title='타이틀'></button>"
+            "case": "button태그에 img(+title)",
+            "tag": "<button><img src='./src/images/sample.jpg' title='타이틀'></button>",
+            "text": "타이틀 버튼",
+            "etc": ""
         },
         {
-            "case": "태그 안에 img(+aria-labelledby)",
-            "state": 1,
-            "text": "레이블/버튼",
-            "tag": "<button><img src='./src/images/sample.jpg' aria-labelledby='connect'></button><span id='connect'>레이블</span>"
+            "case": "button태그에 img(+aria-labelledby)",
+            "tag": "<button><img src='./src/images/sample.jpg' aria-labelledby='connect'></button><span id='connect'>레이블</span>",
+            "text": "레이블 버튼",
+            "etc": ""
         },
         {
-            "case": "aria-label, 태그 안에 img",
-            "state": 1,
-            "text": "라벨/버튼",
-            "tag": "<button aria-label='라벨'><img src='./src/images/sample.jpg'></button>"
+            "case": "button태그에 aria-label, img",
+            "tag": "<button aria-label='레이블'><img src='./src/images/sample.jpg'></button>",
+            "text": "레이블 버튼",
+            "etc": ""
         }
     ]
 }

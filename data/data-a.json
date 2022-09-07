@@ -1,70 +1,76 @@
 {
     "data": [
         {
-            "case": "aria-label",
-            "state": 0,
-            "text": "텍스트/방문하는 링크",
-            "tag": "<a href='#' aria-label='라벨'>텍스트</a>"
+            "case": "a태그에 aria-label",
+            "tag": "<a href='#' aria-label='레이블'>텍스트</a>",
+            "text": "텍스트 링크",
+            "etc": "aria-label 안읽음"
         },
         {
-            "case": "aria-labelledby",
-            "state": 0,
-            "text": "텍스트/방문하는 링크",
-            "tag": "<a href='#' aria-labelledby='connect'>텍스트</a><span id='connect'>레이블</span>"
+            "case": "a태그에 aria-labelledby",
+            "tag": "<a href='#' aria-labelledby='connect'>텍스트</a><span id='connect'>레이블</span>",
+            "text": "텍스트 링크",
+            "etc": "aria-labelledby 안읽음"
         },
         {
-            "case": "aria-describedby",
-            "state": 0,
-            "text": "텍스트/레이블/방문하는 링크",
-            "tag": "<a href='#' aria-describedby='connect'>텍스트</a><span id='connect'>레이블</span>"
+            "case": "a태그에 aria-describedby",
+            "tag": "<a href='#' aria-describedby='connect'>텍스트</a><span id='connect'>레이블</span>",
+            "text": "텍스트 레이블 링크",
+            "etc": ""
         },
         {
-            "case": "title",
-            "state": 1,
-            "text": "텍스트/타이틀/방문하는 링크",
-            "tag": "<a href='#' title='타이틀'>텍스트</a>"
+            "case": "a태그에 title",
+            "tag": "<a href='#' title='타이틀'>텍스트</a>",
+            "text": "텍스트 타이틀 링크",
+            "etc": ""
         },
         {
-            "case": "href 없음",
-            "state": 1,
-            "text": "(focus 안하고 넘어감)",
-            "tag": "<a>텍스트</a>"
+            "case": "a태그에 href 없음",
+            "tag": "<a>텍스트</a>",
+            "text": "-",
+            "etc": "focus 안함"
         },
         {
-            "case": "href 없음, tabindex",
-            "state": 1,
+            "case": "a태그에 tabindex",
+            "tag": "<a href='#' tabindex='0'>텍스트</a>",
+            "text": "텍스트 링크",
+            "etc": ""
+        },
+        {
+            "case": "a태그에 href 없음, tabindex",
+            "tag": "<a tabindex='0'>텍스트</a>",
             "text": "텍스트",
-            "tag": "<a tabindex='0'>텍스트</a>"
+            "etc": "★focus도 가면서 안에 텍스트만 읽어줬음할때 유용"
         },
         {
-            "case": "role='none'",
-            "state": 1,
-            "text": "텍스트/방문하는 링크",
-            "tag": "<a href='#' role='none'>텍스트</a>"
+            "case": "a태그에 role='none'",
+            "tag": "<a href='#' role='none'>텍스트</a>",
+            "text": "텍스트 링크",
+            "etc": ""
         },
         {
-            "case": "role='button'",
-            "state": 1,
-            "text": "텍스트/버튼",
-            "tag": "<a href='#' role='button'>텍스트</a>"
+            "case": "a태그에 role='button'",
+            "tag": "<a href='#' role='button'>텍스트</a>",
+            "text": "텍스트 버튼",
+            "etc": ""
         },
         {
-            "case": "태그 안에 img(+alt)",
-            "state": -1,
-            "text": "알트/방문하는 그래픽 링크",
-            "tag": "<a href='#'><img src='./src/images/sample.jpg' alt='알트'></a>"
+            "case": "a태그에 img(+alt)",
+            "tag": "<a href='#'><img src='./src/images/sample.jpg' alt='알트'></a>",
+            "text": "알트 그래픽 링크",
+            "etc": ""
         },
         {
-            "case": "태그 안에 img(+title)",
-            "state": 1,
-            "text": "타이틀/방문하는 그래픽 링크",
-            "tag": "<a href='#'><img src='./src/images/sample.jpg' title='타이틀'></a>"
+            "case": "a태그에 img(+title)",
+            "tag": "<a href='#'><img src='./src/images/sample.jpg' title='타이틀'></a>",
+            "text": "타이틀 그래픽 링크",
+            "etc": ""
         },
         {
-            "case": "aria-label, 태그 안에 img",
-            "state": 1,
-            "text": "라벨/방문하는 그래픽 링크",
-            "tag": "<a href='#' aria-label='라벨'><img src='./src/images/sample.jpg'></a>"
+            "case": "a태그에 aria-label, img(+alt)",
+            "tag": "<a href='#' aria-label='레이블'><img src='./src/images/sample.jpg'></a>",
+            "text": "레이블 그래픽 링크",
+            "etc": ""
         }
     ]
 }
